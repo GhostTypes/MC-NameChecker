@@ -1,0 +1,7 @@
+configparser
+bs4
+colorama
+requests
+requests[socks]
+easygui
+fake_useragent
