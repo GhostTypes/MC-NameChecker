@@ -485,6 +485,8 @@ class Main:
             self.save_upcoming_name(f'{name} ({searches} searches) (Dropping at: {drop_time})')
         elif name_status['type'] == 3:
             Stats.bad += 1
+            if Settings.printBad:
+                self.safe_print(f'{red}[C] {name} | Searches: {searches}')
         elif name_status['type'] == 4:
             Stats.blocked += 1
             self.safe_print(f'{red}[B] {name} | Searches: {searches}')
