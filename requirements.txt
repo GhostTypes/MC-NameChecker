@@ -4,4 +4,3 @@ colorama
 requests
 requests[socks]
 easygui
-fake_useragent
